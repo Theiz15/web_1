@@ -1,0 +1,118 @@
+/* Reset mặc định của trình duyệt */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Căn chỉnh body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container chính dùng Flexbox để chia trang thành 2 phần */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 900px; /* Điều chỉnh kích thước phù hợp */
+    padding: 20px;
+}
+
+/* Phần trái - tên và thông điệp */
+.left-section {
+    width: 50%; /* Chiếm 50% container */
+    padding: 20px;
+}
+
+.left-section h1 {
+    color: #1877f2;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.left-section p {
+    font-size: 20px;
+    color: #1c1e21;
+    margin-top: 10px;
+}
+
+/* Phần phải - Form đăng nhập */
+.right-section {
+    width: 40%; /* Chiếm 40% container */
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form {
+    width: 100%; /* Đảm bảo form điền đủ chiều rộng */
+    display: flex;
+    flex-direction: column;
+}
+
+.input-field {
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border: 1px solid #dddfe2;
+    border-radius: 4px;
+}
+
+.login-btn {
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #1877f2;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.forgot-password {
+    color: #1877f2;
+    text-align: center;
+    margin-bottom: 10px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.create-account-btn {
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #42b72a;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Đảm bảo trang responsive */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .left-section, .right-section {
+        width: 100%;
+    }
+
+    .login-form {
+        width: 80%;
+    }
+}
