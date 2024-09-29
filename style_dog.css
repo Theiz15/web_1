@@ -1,0 +1,19 @@
+.spancel {
+    color: #3678B7;
+    font-weight: 900;
+}
+.ch{
+    color: #3678B7;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.const{
+    font-weight: 900;
+    font: 900;
+}
+th{
+    background-color: white;
+}
+
